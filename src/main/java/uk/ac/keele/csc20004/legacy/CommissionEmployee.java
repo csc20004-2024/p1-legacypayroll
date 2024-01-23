@@ -83,7 +83,7 @@ public class CommissionEmployee extends Employee {
     * For completeness, we document them here.
     * This sets the gross sales amount.
     * 
-    * @param commissionRate the commission percentage (must be > 0.0 and < 1.0)
+    * @param commissionRate the commission percentage (must be between 0.0 and 1.0)
     */
    public void setCommissionRate(double commissionRate) {
       if (commissionRate <= 0.0 || commissionRate >= 1.0) { // validate
@@ -99,7 +99,7 @@ public class CommissionEmployee extends Employee {
     * For completeness, we document them here.
     * This returns the gross sales amount.
     * 
-    * @return the commission percentage (a number > 0.0 and < 1.0)
+    * @return the commission percentage (a number between 0.0 and 1.0)
     */
    public double getCommissionRate() {
       return commissionRate;

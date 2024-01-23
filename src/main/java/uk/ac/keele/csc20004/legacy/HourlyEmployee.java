@@ -69,7 +69,7 @@ public class HourlyEmployee extends Employee {
     * For completeness, we document them here.
     * This returns the wage.
     * 
-    * @return the hourly wage (a number >= 0.0)
+    * @return the hourly wage (a positive number)
     */
    public double getWage() {
       return wage;
@@ -80,7 +80,7 @@ public class HourlyEmployee extends Employee {
     * For completeness, we document them here.
     * This sets the hours worked.
     * 
-    * @param hours the worked hours per week (must be >= 0.0 and <= 168.0)
+    * @param hours the worked hours per week (must be between 0.0 and 168.0)
     */
    public void setHours(double hours) {
       if ((hours < 0.0) || (hours > 168.0)) { // validate hours
@@ -96,7 +96,7 @@ public class HourlyEmployee extends Employee {
     * For completeness, we document them here.
     * This returns the hours worked.
     * 
-    * @return the worked hours per week (a number >= 0.0 and <= 168.0)
+    * @return the worked hours per week (a number between 0.0 and 168.0)
     */
    public double getHours() {
       return hours;
