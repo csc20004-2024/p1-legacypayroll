@@ -38,23 +38,45 @@ public abstract class Employee {
       this.socialSecurityNumber = socialSecurityNumber;
    } 
 
-   // return first name
+   /**
+    * There is usually no need for documenting obvious getters and setters.
+    * For completeness, we document them here.
+    * @return the first name of the employee
+    */
    public String getFirstName() {return firstName;}
 
-   // return last name
-   public String getLastName() {return lastName;}
+   /**
+    * There is usually no need for documenting obvious getters and setters.
+    * For completeness, we document them here.
+    * @return the last name of the employee
+    */
+    public String getLastName() {return lastName;}
 
-   // return social security number
-   public String getSocialSecurityNumber() {return socialSecurityNumber;}
+   
+   /**
+    * There is usually no need for documenting obvious getters and setters.
+    * For completeness, we document them here.
+    * @return the social security number of the employee
+    */
+    public String getSocialSecurityNumber() {return socialSecurityNumber;}
 
-   // return String representation of Employee object
+   /**
+    * It's usually a good idea to override the toString() method
+    * to provide a more meaningful representation of the object when
+    * it is printed.
+    * @return a String representation of Employee object (printout of the main attributes)
+    */
    @Override
    public String toString() {
       return String.format("%s %s%nsocial security number: %s", 
          getFirstName(), getLastName(), getSocialSecurityNumber());
    }
 
-   // abstract method must be overridden by concrete subclasses
+   /**
+    * This is an abstract method, which means that it must be overridden
+    * by any concrete subclass of Employee.
+    * @return the earnings of the employee
+    */
    public abstract double earnings(); // no implementation here
 } 
 
